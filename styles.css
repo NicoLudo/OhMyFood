@@ -2,6 +2,11 @@
 body {
   margin: 0;
 }
+i.fa-solid {
+  color: #404040;
+  padding-right: 7px;
+  line-height: 0;
+}
 /* header */
 body > header:nth-child(1) {
   display: flex;
@@ -29,11 +34,16 @@ footer p {
 }
 .icons_footer {
   filter: invert(100%);
+  display: inline-flex;
+  justify-content: center;
 }
 .padding_footer {
   padding-top: 25px;
   padding-left: 25px;
   padding-bottom: 20px;
+}
+.line_height_footer {
+  line-height: 10px;
 }
 
 /* Accueil */
@@ -49,10 +59,6 @@ footer p {
   margin-bottom: 0px;
   padding-top: 12px;
   padding-bottom: 12px;
-}
-.fa-solid {
-  color: #404040;
-  padding-right: 7px;
 }
 /* section 2 */
 .restaurant_search {
