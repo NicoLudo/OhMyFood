@@ -1,7 +1,6 @@
+/* All pages */
 body {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
+  margin: 0;
 }
 /* header */
 body > header:nth-child(1) {
@@ -13,6 +12,31 @@ body > header:nth-child(1) {
   padding-top: 3px;
   width: 210px;
 }
+.restaurants_images {
+  width: 100%;
+}
+/* footer */
+footer {
+  background: #353535;
+  display: block;
+}
+footer p {
+  color: white;
+}
+.ohmyfood_footer {
+  filter: invert(100%);
+  width: 30%;
+}
+.icons_footer {
+  filter: invert(100%);
+}
+.padding_footer {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+/* Accueil */
 /* section 1 */
 .location {
   text-align: center;
@@ -63,8 +87,3 @@ body > header:nth-child(1) {
   display: block;
   text-align: center;
 }
-/* container 1 */
-.restaurants_images {
-  width: 100%;
-}
-/* footer */
