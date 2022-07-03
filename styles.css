@@ -1,14 +1,12 @@
-/* All pages */
-h1 {
-  font-size: 50px;
+.padding_left_title {
+  padding-left: 30px;
 }
+h1,
 h2 {
-  font-size: 42px;
-}
-p {
-  font-size: 30px;
+  font-family: "Shrikhand", cursive;
 }
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 i.fa-solid {
@@ -16,112 +14,85 @@ i.fa-solid {
   padding-right: 7px;
 }
 /* header */
-body > header:nth-child(1) {
+header {
   display: flex;
   justify-content: center;
 }
 .ohmyfood {
-  width: 300px;
-  padding-bottom: 25px;
-  padding-top: 25px;
- }
-.restaurants_images {
-  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 /* Accueil */
 /* section 1 */
 .location {
   text-align: center;
-  font-size: 20px;
   background: #eceaea;
   box-shadow: 0px 3px 2px -1px inset gray;
-}
-.location > p:nth-child(1) {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 /* section 2 */
 .restaurant_search {
   text-align: center;
-  font-size: 20px;
   background: #f7f7f7;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 40px;
 }
-.restaurant_search > h1:nth-child(1) {
+.title_restaurant_search {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 10px;
   padding-top: 20px;
 }
-.restaurant_search > p:nth-child(2) {
+.description_restaurant_search {
   margin-top: 0px;
-  margin-bottom: 40px;
-  height: 83px;
-  font-size: 44px;
 }
-.restaurant_search > p:nth-child(3) {
+.button_restaurant_search {
   border-radius: 100px;
-  background-image: linear-gradient(172deg, #d18bd7, #d500bc);
+  background-image: linear-gradient(172deg, #ff79da, #9356dc);
   color: white;
   box-shadow: 0px 8px 3px -3px #c6c6c6;
   justify-content: center;
   display: inline-flex;
-  padding-right: 60px;
-  padding-left: 60px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 /* section 3 */
-.i_functioning {
-  display: grid;
-  border-radius: 10px;
-  justify-content: center;
-}
- .i_functioning > p:nth-child(1) {
+.p_functioning {
   box-shadow: 0px 4px 4px 5px #f6f6f6;
-  padding-left: 220px;
-  padding-right: 220px;
-  padding-bottom: 45px;
-  padding-top: 45px;
-  align-items: center;
-  width: auto;
   border-radius: 30px;
+  margin-right: 30px;
+  margin-left: 45px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 40px;
 }
-.i_functioning > p:nth-child(2) {
-  box-shadow: 0px 4px 4px 5px #f6f6f6;
-  padding-left: 220px;
-  padding-right: 220px;
-  padding-bottom: 45px;
-  padding-top: 45px;
-  align-items: center;
-  width: auto;
-  border-radius: 30px;
+.p_functioning:hover {
+  background-color: #9356dc;
 }
-.i_functioning > p:nth-child(3) {
-  box-shadow: 0px 4px 4px 5px #f6f6f6;
-  padding-left: 220px;
-  padding-right: 220px;
-  padding-bottom: 45px;
-  padding-top: 45px;
-  align-items: center;
-  width: auto;
-  border-radius: 30px;
+.figure_images_fonctioning_restaurant {
+  box-shadow: 0px 3px 10px 1px #c6c6c6;
+  border-radius: 21px;
 }
-.functioning > p:nth-child(2):hover {
-  background-color: #fbf4fc;
-  color: #d500bc;
+.images_functioning_restaurant {
+  width: 100%;
+  border-top-right-radius: 21px;
+  border-top-left-radius: 21px;
 }
-.functioning > p:nth-child(3):hover {
-  background-color: #fbf4fc;
-  color: #d500bc;
+.link_functioning_restaurant {
+  text-decoration: none;
+  color: inherit;
 }
-.functioning > p:nth-child(4):hover {
-  background-color: #fbf4fc;
-  color: #d500bc;
+.figcaption_h2_p_functionning_restaurant {
+  margin: 0px;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+.figcaption_p_fonctioning_restaurant {
+  padding-bottom: 15px;
 }
 /* footer */
 footer {
@@ -146,16 +117,4 @@ i.icons_footer {
 }
 .line_height_footer {
   line-height: 10px;
-}
-.line_height_footer > p:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 173px;
-}
-.line_height_footer > p:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 149px;
 }
