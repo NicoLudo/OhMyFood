@@ -87,6 +87,8 @@ header {
   width: 100%;
   border-top-right-radius: 21px;
   border-top-left-radius: 21px;
+  height: 157px;
+  object-fit: cover;
 }
 .link_functioning_restaurant {
   text-decoration: none;
