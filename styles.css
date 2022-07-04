@@ -5,10 +5,10 @@
 .padding_left_title {
   padding-left: 30px;
 }
-h1,
+/* h1,
 h2 {
-  font-family: "Shrikhand", cursive;
-}
+  font-family: "Shrikhand";
+} */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -91,11 +91,12 @@ header {
   height: 157px;
   object-fit: cover;
 }
-.link_functioning_restaurant {
+.figcaption_h2_functioning_restaurant {
   text-decoration: none;
   color: inherit;
+  font-size: 20px;
 }
-.figcaption_h2_p_functionning_restaurant {
+.figcaption_h2_p_functioning_restaurant {
   margin: 0px;
   margin-top: 5px;
   padding-left: 15px;
@@ -120,7 +121,6 @@ i.icons_footer {
   line-height: 0;
 }
 .padding_footer {
-  padding-top: 25px;
   padding-left: 25px;
   padding-bottom: 20px;
 }
