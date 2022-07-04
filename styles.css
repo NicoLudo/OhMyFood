@@ -1,3 +1,7 @@
+.padding_top_bottom {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
 .padding_left_title {
   padding-left: 30px;
 }
@@ -37,7 +41,6 @@ header {
   background: #f7f7f7;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 40px;
 }
 .title_restaurant_search {
   margin-top: 0px;
@@ -61,6 +64,9 @@ header {
   padding-left: 35px;
 }
 /* section 3 */
+.restaurant {
+  background: #f7f7f7;
+}
 .p_functioning {
   box-shadow: 0px 4px 4px 5px #f6f6f6;
   border-radius: 30px;
