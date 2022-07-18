@@ -26,15 +26,12 @@ body {
 
 i.fa-solid {
   color: #404040;
-  padding-right: 7px;
 }
 
 .arrow_back {
-  position: relative;
+  position: absolute;
   top: 25px;
-  right: 50px;
-  bottom: -20px;
-  height: 15px;
+  left: 33px;
 }
 
 .arrow_back:hover {
@@ -53,6 +50,42 @@ i.fa-solid {
   width: 51px;
   height: 3px;
   background-color: #99E2D0;
+}
+
+.change_icon {
+  cursor: pointer;
+}
+
+.change_icon2 {
+  cursor: pointer;
+}
+
+.heart_icon {
+  cursor: pointer;
+}
+
+.heart_icon:hover {
+  color: #9356dc;
+  transition: color 300ms;
+}
+
+.product-icon-heart {
+  width: 31%;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.product-icon-heart .heart-toggle {
+  color: #D6D4D4;
+}
+
+.product-icon-heart .heart-toggle .fas {
+  color: #8ABE57;
+}
+
+.product-icon-heart .heart-toggle:hover {
+  color: #8ABE57;
 }
 
 /* header */
@@ -222,7 +255,7 @@ header {
     transform: scaleY(0);
     opacity: .1;
   }
-  
+
   100% {
     transform: scaleY(1);
   }
