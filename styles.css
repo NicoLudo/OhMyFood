@@ -2,42 +2,70 @@
   padding-bottom: 50px;
   padding-top: 20px;
 }
+
 .padding_top_bottom_2 {
   padding-top: 20px;
 }
+
 .padding_left_title {
   padding-left: 30px;
 }
+
 .bold {
   font-weight: bold;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+
+.background_color {
+  background: #f7f7f7;
+}
+
 i.fa-solid {
   color: #404040;
-/*   padding-right: 7px;
- */}
+  padding-right: 7px;
+}
+
 .arrow_back {
   position: relative;
   top: 25px;
   right: 50px;
   bottom: -20px;
   height: 15px;
- }
- .arrow_back:hover {
+}
+
+.arrow_back:hover {
   cursor: pointer;
- }
+}
+
+.small_title {
+  font-size: 20px;
+}
+
+.rectangle {
+  margin-left: 29px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: -10px;
+  width: 51px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
 /* header */
 header {
   display: flex;
   justify-content: center;
 }
+
 .ohmyfood {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+
 /* Accueil */
 /* section 1 */
 .location {
@@ -47,6 +75,7 @@ header {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+
 /* section 2 */
 .restaurant_search {
   text-align: center;
@@ -54,15 +83,18 @@ header {
   padding-right: 20px;
   padding-left: 20px;
 }
+
 .title_restaurant_search {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 10px;
   padding-top: 20px;
 }
+
 .description_restaurant_search {
   margin-top: 0px;
 }
+
 .button {
   border-radius: 100px;
   background-image: linear-gradient(172deg, #ff79da, #9356dc);
@@ -74,10 +106,12 @@ header {
   padding-right: 35px;
   padding-left: 35px;
 }
+
 /* section 3 */
 .restaurant {
   background: #f7f7f7;
 }
+
 .p_functioning {
   box-shadow: 0px 4px 4px 5px #f6f6f6;
   border-radius: 30px;
@@ -87,14 +121,17 @@ header {
   padding-top: 30px;
   padding-left: 40px;
 }
+
 .p_functioning:hover {
   transition-duration: 300ms;
   background-color: #9356dc20;
 }
+
 .figure_images_fonctioning_restaurant {
   box-shadow: 0px 3px 10px 1px #c6c6c6;
   border-radius: 21px;
 }
+
 .images_functioning_restaurant {
   width: 100%;
   border-top-right-radius: 21px;
@@ -102,27 +139,32 @@ header {
   height: 157px;
   object-fit: cover;
 }
+
 .figcaption_h2_functioning_restaurant {
   text-decoration: none;
   color: inherit;
   font-size: 20px;
 }
+
 .figcaption_h2_p_functioning_restaurant {
   margin: 0px;
   margin-top: 5px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .figcaption_p_fonctioning_restaurant {
   padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
 }
+
 /* others pages */
 .images_restaurant {
   width: 100%;
   object-fit: cover;
 }
+
 .h1_title {
   padding-right: 40px;
   display: flex;
@@ -130,60 +172,91 @@ header {
   border-top-right-radius: 21px;
   border-top-left-radius: 21px;
   position: relative;
-  background: white;
+  background: #f7f7f7;
   bottom: 55px;
   margin-top: 19.92px;
   padding-top: 32px;
   margin-bottom: 0px;
+  font-size: 30px;
 }
+
 .padding_right_40px {
   padding-right: 40px;
 }
+
 .margin_top_0px {
   margin-top: 0px;
 }
+
 .menu {
-  box-shadow: 0px 4px 4px 5px #f6f6f6;
+  box-shadow: 0px 4px 4px 5px #f0efef;
   border-radius: 30px;
   padding-bottom: 1px;
   padding-top: 1px;
   padding-left: 21px;
   line-height: 16px;
   margin: 21px;
+  background-color: #fff;
 }
+
 .menu_desc_and_price {
   display: flex;
   justify-content: space-between;
 }
+
 .menu_dish_name {
   margin-bottom: 10px;
 }
+
 .margin_bottom_0px {
   margin-bottom: 0px;
 }
+
+.accordeon {
+  transform-origin: 100% 0%;
+  animation: accordeon 1s;
+}
+
+@keyframes accordeon {
+  0% {
+    transform: scaleY(0);
+    opacity: .1;
+  }
+  
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 /* footer */
 footer {
   background: #353535;
   display: block;
 }
+
 footer p {
   color: white;
 }
+
 .ohmyfood_footer {
   filter: invert(100%);
   width: 30%;
 }
+
 i.icons_footer {
   filter: invert(100%);
   line-height: 0;
 }
+
 .padding_footer {
   padding-left: 25px;
   padding-bottom: 20px;
 }
+
 .line_height_footer {
   line-height: 10px;
 }
+
 /* loading screen */
 .loader {
   display: inline-block;
@@ -192,14 +265,18 @@ i.icons_footer {
   position: relative;
   border: 4px solid #fff;
   animation: loader 2s infinite ease;
+  z-index: 999;
 }
+
 .loader-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
+  z-index: 999;
 }
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -221,6 +298,7 @@ i.icons_footer {
     transform: rotate(360deg);
   }
 }
+
 @keyframes loader-inner {
   0% {
     height: 0%;
@@ -242,6 +320,7 @@ i.icons_footer {
     height: 0%;
   }
 }
+
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -252,4 +331,5 @@ i.icons_footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }

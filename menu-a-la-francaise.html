@@ -15,104 +15,125 @@
 </head>
 
 <body>
+
   <!-- loading screen -->
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
   <script>
-    $(window).on("load", function() {
+    $(window).on("load", function () {
       $(".loader-wrapper").fadeOut(1000);
     });
   </script>
+
   <!-- header -->
   <header>
     <a href="index.html"><i class="arrow_back fa-solid fa-arrow-left fa-xl"></i></a> <!-- problème de lien -->
     <img class="ohmyfood" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood">
   </header>
   <img class="images_restaurant" src="images/restaurants//toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa heftiba">
-  <!-- section 1 -->
-  <section>
-    <h1 class="padding_left_title h1_title">À la française<i class="heart_icon fa-regular fa-heart"></i></h1>
+
+  <!-- start of the entire menu section -->
+  <section class="background_color">
+
+    <!-- section 1 -->
+    <section>
+      <h1 class="padding_left_title h1_title">À la française<i class="heart_icon fa-regular fa-heart"></i></h1>
+    </section>
+
+    <!-- all containers -->
+    <!-- <section class="accordeon"> -->
+
+      <!-- container 1 -->
+      <section class="padding_top_bottom_2">
+        <h2 class="small_title margin_top_0px padding_left_title">ENTRÉES</h2>
+        <div class="rectangle"></div>
+        <div class="accordeon menu">
+          <h3 class="margin_bottom_0px">Tartare de poulpe acidulé</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Aux zests d'orange</p>
+            <p class="bold">25€</p>
+          </div>
+        </div>
+        <div class="accordeon menu">
+          <h3 class="margin_bottom_0px">Velouté de légumes d'antan</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Carotte, panais, topinambour</p>
+            <p class="bold">35€</p>
+          </div>
+        </div>
+        <div class="accordeon menu">
+          <h3 class="margin_bottom_0px">Soupe à l'oignon</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Revisitée</p>
+            <p class="bold">20€</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- container 2 -->
+      <section class="padding_top_bottom_2">
+        <h2 class="small_title padding_left_title">PLATS</h2>
+        <div class="rectangle"></div>
+        <div class="menu">
+          <h3 class="margin_bottom_0px">Coquilles Saint-Jacques</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Accompagnées d'une purée de panais</p>
+            <p class="bold">40€</p>
+          </div>
+        </div>
+        <div class="menu">
+          <h3 class="margin_bottom_0px">Magret de canard</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Et parmentier de pommes de terres</p>
+            <p class="bold">35€</p>
+          </div>
+        </div>
+        <div class="menu">
+          <h3 class="margin_bottom_0px">Pigeonneau d'Ille-et-Vilaine</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Sur son lit de gnocchis aux légumes</p>
+            <p class="bold">44€</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- container 3 -->
+      <section class="padding_top_bottom_2">
+        <h2 class="small_title padding_left_title">DESSERTS</h2>
+        <div class="rectangle"></div>
+        <div class="menu">
+          <h3 class="margin_bottom_0px">Pétales de violettes glacés</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Et purée de noisettes</p>
+            <p class="bold">18€</p>
+          </div>
+        </div>
+        <div class="menu">
+          <h3 class="margin_bottom_0px">Fondant au chocolat</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Revisité</p>
+            <p class="bold">22€</p>
+          </div>
+        </div>
+        <div class="menu">
+          <h3 class="margin_bottom_0px">Millefeuille croustillant</h3>
+          <div class="menu_desc_and_price padding_right_40px">
+            <p class="menu_dish_name">Myrtilles et pâte d'amande</p>
+            <p class="bold">23€</p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- section 2 -->
+    <section class="restaurant_search padding_top_bottom">
+      <p class="button">Commander</p>
+    </section>
+
   </section>
-  <!-- container 1 -->
-  <section class="padding_top_bottom_2">
-    <h2 class="margin_top_0px padding_left_title">ENTRÉES</h2>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Tartare de poulpe acidulé</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Aux zests d'orange</p>
-        <p class="bold">25€</p>
-      </div>
-    </div>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Velouté de légumes d'antan</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Carotte, panais, topinambour</p>
-        <p class="bold">35€</p>
-      </div>
-    </div>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Soupe à l'oignon</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Revisitée</p>
-        <p class="bold">20€</p>
-      </div>
-    </div>
-  </section>
-  <!-- container 2 -->
-  <section class="padding_top_bottom_2">
-    <h2 class="padding_left_title">PLATS</h2>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Coquilles Saint-Jacques</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Accompagnées d'une purée de panais</p>
-        <p class="bold">40€</p>
-      </div>
-    </div>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Magret de canard</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Et parmentier de pommes de terres</p>
-        <p class="bold">35€</p>
-      </div>
-    </div>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Pigeonneau d'Ille-et-Vilaine</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Sur son lit de gnocchis aux légumes</p>
-        <p class="bold">44€</p>
-      </div>
-    </div>
-  </section>
-  <!-- container 3 -->
-  <section class="padding_top_bottom_2">
-    <h2 class="padding_left_title">DESSERTS</h2>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Pétales de violettes glacés</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Et purée de noisettes</p>
-        <p class="bold">18€</p>
-      </div>
-    </div>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Fondant au chocolat</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Revisité</p>
-        <p class="bold">22€</p>
-      </div>
-    </div>
-    <div class="menu">
-      <h3 class="margin_bottom_0px">Millefeuille croustillant</h3>
-      <div class="menu_desc_and_price padding_right_40px">
-        <p class="menu_dish_name">Myrtilles et pâte d'amande</p>
-        <p class="bold">23€</p>
-      </div>
-    </div>
-  </section>
-  <!-- section 2 -->
-  <section class="restaurant_search padding_top_bottom">
-    <p class="button">Commander</p>
-  </section>
+
   <!-- Footer -->
   <footer>
     <div class="padding_footer padding_top_bottom_2">
@@ -124,9 +145,11 @@
         <p>Contact</p>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="mon_script.js"></script>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="mon_script.js"></script>
+
 </body>
 
 </html>
