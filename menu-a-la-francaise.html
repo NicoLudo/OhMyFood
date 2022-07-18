@@ -9,23 +9,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/9b182b6047.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
 </head>
 
 <body>
+  <!-- loading screen -->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+    $(window).on("load", function() {
+      $(".loader-wrapper").fadeOut(1000);
+    });
+  </script>
   <!-- header -->
   <header>
-    <i class="fa-solid fa-arrow-left-long"></i>
+    <a href="index.html"><i class="arrow_back fa-solid fa-arrow-left fa-xl"></i></a> <!-- problème de lien -->
     <img class="ohmyfood" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood">
   </header>
   <img class="images_restaurant" src="images/restaurants//toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa heftiba">
   <!-- section 1 -->
   <section>
-    <h1 class="padding_left_title h1_title">À la française<i class="fa-regular fa-heart"></i></h1>
+    <h1 class="padding_left_title h1_title">À la française<i class="heart_icon fa-regular fa-heart"></i></h1>
   </section>
   <!-- container 1 -->
-  <section>
+  <section class="padding_top_bottom_2">
     <h2 class="margin_top_0px padding_left_title">ENTRÉES</h2>
     <div class="menu">
       <h3 class="margin_bottom_0px">Tartare de poulpe acidulé</h3>
@@ -50,7 +60,7 @@
     </div>
   </section>
   <!-- container 2 -->
-  <section>
+  <section class="padding_top_bottom_2">
     <h2 class="padding_left_title">PLATS</h2>
     <div class="menu">
       <h3 class="margin_bottom_0px">Coquilles Saint-Jacques</h3>
@@ -75,7 +85,7 @@
     </div>
   </section>
   <!-- container 3 -->
-  <section>
+  <section class="padding_top_bottom_2">
     <h2 class="padding_left_title">DESSERTS</h2>
     <div class="menu">
       <h3 class="margin_bottom_0px">Pétales de violettes glacés</h3>
@@ -100,12 +110,12 @@
     </div>
   </section>
   <!-- section 2 -->
-  <section>
-    <h2 class="padding_left_title">Commander</h2>
+  <section class="restaurant_search padding_top_bottom">
+    <p class="button">Commander</p>
   </section>
   <!-- Footer -->
   <footer>
-    <div class="padding_footer padding_top_bottom">
+    <div class="padding_footer padding_top_bottom_2">
       <img class="ohmyfood_footer" src="images/logo/ohmyfood.png" alt="ohmyfood">
       <div class="line_height_footer">
         <p><i class="icons_footer fa-solid fa-utensils"></i>Proposer un restaurant</p>
@@ -114,6 +124,8 @@
         <p>Contact</p>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="mon_script.js"></script>
   </footer>
 </body>
 

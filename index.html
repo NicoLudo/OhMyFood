@@ -9,11 +9,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/9b182b6047.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
 </head>
 
 <body>
+  <!-- loading screen -->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+    $(window).on("load", function() {
+      $(".loader-wrapper").fadeOut(1000);
+    });
+  </script>
   <!-- header -->
   <header>
     <img class="ohmyfood" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood">
@@ -26,7 +36,7 @@
   <section class="padding_top_bottom restaurant_search">
     <h1 class="title_restaurant_search">Réservez le menu qui vous convient</h1>
     <p class="description_restaurant_search">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-    <p class="button_restaurant_search">Explorer nos restaurants</p>
+    <p class="button">Explorer nos restaurants</p>
   </section>
   <!-- section 3 -->
   <section class="padding_top_bottom">
@@ -44,28 +54,28 @@
           <a href="menu-la-palette-du-gout.html" target="_blank"><img class="images_functioning_restaurant" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay wennington"></a>
           <figcaption>
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant" href="/menu-la-palette-du-gout.html" target="_blank">La palette du goût</a></h2>
-            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Ménilmontant<i class="icons_restaurant fa-regular fa-heart fa-lg"></i></p>
+            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Ménilmontant<i class="heart_icon fa-regular fa-heart fa-lg"></i></p>
           </figcaption>
         </figure>
         <figure class="figure_images_fonctioning_restaurant">
           <a href="menu-la-note-enchantee.html" target="_blank"><img class="images_functioning_restaurant" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="stil u"></a>
           <figcaption>
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant" href="/menu-la-note-enchantee.html" target="_blank">La note enchantée</a></h2>
-            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Charonne<i class="icons_restaurant fa-regular fa-heart fa-lg"></i></p>
+            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Charonne<i class="heart_icon fa-regular fa-heart fa-lg"></i></p>
           </figcaption>
         </figure>
         <figure class="figure_images_fonctioning_restaurant">
           <a href="menu-a-la-francaise.html" target="_blank"><img class="images_functioning_restaurant" src="images/restaurants//toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa heftiba"></a>
           <figcaption>
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant" href="/menu-a-la-francaise.html" target="_blank">À la française</a></h2>
-            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Cité Rouge<i class="icons_restaurant fa-regular fa-heart fa-lg"></i></p>
+            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Cité Rouge<i class="heart_icon fa-regular fa-heart fa-lg"></i></p>
           </figcaption>
         </figure>
         <figure class="figure_images_fonctioning_restaurant">
           <a href="menu-le-delice-des-sens.html" target="_blank"><img class="images_functioning_restaurant" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis hansel shotsoflouis"></a>
           <figcaption>
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant" href="/menu-le-delice-des-sens.html" target="_blank">Le délice des sens</a></h2>
-            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Folie-Méricourt<i class="icons_restaurant fa-regular fa-heart fa-lg"></i></p>
+            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Folie-Méricourt<i class="heart_icon fa-regular fa-heart fa-lg"></i></p>
           </figcaption>
         </figure>
       </div>
@@ -83,6 +93,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="mon_script.js"></script>
 </body>
 
 </html>
