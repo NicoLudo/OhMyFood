@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/9b182b6047.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
 </head>
@@ -20,11 +19,6 @@
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
-  <script>
-    $(window).on("load", function () {
-      $(".loader-wrapper").fadeOut(1000);
-    });
-  </script>
 
   <!-- header -->
   <header>
@@ -51,22 +45,6 @@
     <p class="p_functioning"><i class="fa-solid fa-champagne-glasses"></i>Dégustez au restaurant</p>
   </section>
 
-  <!-- heart icon -->
-  <script>
-    $(document).ready(function () {
-      $('.change_icon').click(function () {
-        $('#h_icon').toggleClass('fa-heart fa-heart fa-solid');
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('.change_icon2').click(function () {
-        $('#h_icon2').toggleClass('fa-heart fa-heart fa-solid');
-      });
-    });
-  </script>
-
   <!-- container 1 -->
   <div class="restaurant padding_top_bottom">
     <section>
@@ -80,7 +58,11 @@
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant"
                 href="/menu-la-palette-du-gout.html" target="_blank">La palette du goût</a></h2>
             <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Ménilmontant<span
-                class="change_icon"><i class="far fa-heart fa-lg" id="h_icon"></i></span></p>
+                class="heart"><i class="far fa-heart fa-lg" id="h_icon"></i></span>
+            <div><input class="toggle checkbox" type="checkbox" id="toggle">
+              <div class="control-me"></div>
+            </div>
+            </p>
           </figcaption>
         </figure>
 
@@ -91,7 +73,7 @@
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant"
                 href="/menu-la-note-enchantee.html" target="_blank">La note enchantée</a></h2>
             <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Charonne<span
-                class="change_icon2"><i class="far fa-heart fa-lg" id="h_icon2"></i></span></p>
+                class="heart"><i class="far fa-heart fa-lg" id="h_icon"></i></span></p>
           </figcaption>
         </figure>
 
@@ -101,8 +83,8 @@
           <figcaption>
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant"
                 href="/menu-a-la-francaise.html" target="_blank">À la française</a></h2>
-            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Cité Rouge<i
-                class="heart_icon fa-regular fa-heart fa-lg"></i></p>
+            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Cité Rouge<span
+                class="heart"><i class="far fa-heart fa-lg" id="h_icon"></i></span></p>
           </figcaption>
         </figure>
 
@@ -113,8 +95,8 @@
           <figcaption>
             <h2 class="figcaption_h2_p_functioning_restaurant"><a class="figcaption_h2_functioning_restaurant"
                 href="/menu-le-delice-des-sens.html" target="_blank">Le délice des sens</a></h2>
-            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Folie-Méricourt<i
-                class="heart_icon fa-regular fa-heart fa-lg"></i></p>
+            <p class="figcaption_h2_p_functioning_restaurant figcaption_p_fonctioning_restaurant">Folie-Méricourt<span
+                class="heart"><i class="far fa-heart fa-lg" id="h_icon"></i></span></p>
           </figcaption>
         </figure>
 
@@ -134,9 +116,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="mon_script.js"></script>
 
 </body>
 

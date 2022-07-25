@@ -49,43 +49,34 @@ i.fa-solid {
   margin-top: -10px;
   width: 51px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 
-.change_icon {
+.heart {
   cursor: pointer;
 }
 
-.change_icon2 {
-  cursor: pointer;
-}
-
-.heart_icon {
-  cursor: pointer;
-}
-
-.heart_icon:hover {
+.heart:hover {
   color: #9356dc;
   transition: color 300ms;
 }
 
-.product-icon-heart {
-  width: 31%;
-  text-align: center;
-  font-size: 1.5em;
-  cursor: pointer;
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  right: 55px;
+  bottom: -285.667px;
 }
 
-.product-icon-heart .heart-toggle {
-  color: #D6D4D4;
+.control-me::after {
+  content: "😃";
+  position: absolute;
+  right: 70px;
+  bottom: -285.667px;
 }
 
-.product-icon-heart .heart-toggle .fas {
-  color: #8ABE57;
-}
-
-.product-icon-heart .heart-toggle:hover {
-  color: #8ABE57;
+#toggle:checked~.control-me::after {
+  content: "😩";
 }
 
 /* header */
@@ -245,6 +236,8 @@ header {
   margin-bottom: 0px;
 }
 
+/* accordeons */
+
 .accordeon {
   transform-origin: 100% 0%;
   animation: accordeon 1s;
@@ -253,11 +246,179 @@ header {
 @keyframes accordeon {
   0% {
     transform: scaleY(0);
-    opacity: .1;
+    opacity: 0.1;
   }
 
   100% {
     transform: scaleY(1);
+  }
+}
+
+.accordeon2 {
+  transform-origin: 100% 0%;
+  animation: accordeon2 1s;
+  animation-delay: 0.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon2 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.accordeon3 {
+  transform-origin: 100% 0%;
+  animation: accordeon3 1s;
+  animation-delay: 0.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon3 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.accordeon4 {
+  transform-origin: 100% 0%;
+  animation: accordeon4 1s;
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon4 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.accordeon5 {
+  transform-origin: 100% 0%;
+  animation: accordeon5 1s;
+  animation-delay: 0.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon5 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.accordeon6 {
+  transform-origin: 100% 0%;
+  animation: accordeon6 1s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon6 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.accordeon7 {
+  transform-origin: 100% 0%;
+  animation: accordeon7 1s;
+  animation-delay: 1.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon7 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.accordeon8 {
+  transform-origin: 100% 0%;
+  animation: accordeon8 1s;
+  animation-delay: 1.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon8 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.accordeon9 {
+  transform-origin: 100% 0%;
+  animation: accordeon9 1s;
+  animation-delay: 1.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accordeon9 {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -298,6 +459,7 @@ i.icons_footer {
   position: relative;
   border: 4px solid #fff;
   animation: loader 2s infinite ease;
+  opacity: 1;
   z-index: 999;
 }
 
@@ -307,6 +469,7 @@ i.icons_footer {
   width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
+  opacity: 1;
   z-index: 999;
 }
 
@@ -364,5 +527,7 @@ i.icons_footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
   z-index: 999;
 }
