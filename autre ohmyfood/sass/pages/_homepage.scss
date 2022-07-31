@@ -1,0 +1,410 @@
+.spinner{
+    background: #dbdbdb;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    animation: loadscreen 3s forwards;
+}
+
+@keyframes loadscreen {
+    0%, 50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.loading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__logo {
+        width: 100%;
+        margin: 200px 0 25px;
+        text-align: center;
+        img {
+            width: 200px;
+        }
+    }
+    &__bg {
+        width: 150px;
+        height: 150px;
+        background: radial-gradient($color-secondary, $color-primary, );
+        border-radius: 50%;
+        .loading__spinner {
+            width: 30px;
+            height: 30px;
+            background-color: $color-tertiary;
+            border-radius: 50%;
+            position: relative;
+            top: 10px;
+            right: -60px;
+            transform-origin: 15px 65px;
+            animation-name: spinner;
+            animation-duration: 1200ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(.48,.02,.37,1);
+        }
+        .loading__spinner__2 {
+            width: 23px;
+            height: 23px;
+            background-color: $color-tertiary;
+            border-radius: 50%;
+            position: relative;
+            top: -5px;
+            right: -30px;
+            transform-origin: 45px 50px;
+            animation-name: spinner;
+            animation-duration: 1200ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(.48,.02,.37,1);
+        }
+        .loading__spinner__3 {
+            width: 16px;
+            height: 16px;
+            background-color: $color-tertiary;
+            border-radius: 50%;
+            position: relative;
+            top: -3px;
+            right: -15px;
+            transform-origin: 60px 26px;
+            animation-name: spinner;
+            animation-duration: 1200ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(.48,.02,.37,1);
+        }
+    }
+}
+
+@keyframes spinner { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
+/* ---------- HEADER PAGE ACCUEIL ----------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    img {
+        height: 30px;
+    }
+}
+
+/* --------- SECTION GEOLOCALISATION -------- */
+.zone {
+    display: flex;
+    flex-direction: column;
+    &__location {
+        display: flex;
+        background-color: #d6d6d6;
+        height: 60px;
+        font-weight: bold;
+        margin-top: 60px;
+        box-shadow: inset 0 5px 5px #9c9c9c;
+        div {
+            width: 41%;
+            padding-right: 20px;
+            align-self: center;
+            text-align: end;
+        }
+        p {
+            font-size: 1.1em;
+            width: 59%;
+        }
+    }
+    &__explore {
+        background-color: $color-quaternary;
+        text-align: center;
+        h1 {
+            margin: 50px 15% 15px;
+            font-size: 1.8em;
+        }
+        p {
+            margin: 10px 5% 35px;
+            font-size: 1.5em;
+            color: #575757;
+        }
+    }
+}
+
+
+/* --------- SECTION FONCTIONNEMENT --------- */
+
+.functioning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    h2 {
+        align-self: start;
+        margin: 0 0 35px 5%;
+    }
+    &__bar {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        background-color: $color-quaternary;
+        border-radius: 30px;
+        margin-bottom: 40px;
+        padding: 20px;
+        box-shadow: 5px 5px 5px #dddddd; 
+        position: relative;
+        transition: box-shadow 200ms;
+        &:hover {
+            background-color: #f9e8fd;
+            cursor: pointer;
+            box-shadow: 5px 8px 8px #dddddd;
+        }
+        &:hover > i {
+            color: $color-primary;
+        }
+        &__number {
+            position: absolute;
+            left: -12px;
+            color: #fff;
+            background-color: $color-primary;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            p {
+                position: absolute; 
+                left: 9px;
+                top: -15px;
+                font-weight: 100;
+            }
+        }
+        i {
+            width: 20%;
+            text-align: center;
+            color: #929292;
+        }
+        p {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+/* ----- SECTION LISTES DES RESTAURANTS ----- */
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-quaternary;
+    margin-top: 30px;
+    padding-bottom: 55px;
+    h2 {
+        margin: 60px 0 30px 0;
+        width: 90%;
+    }
+    &__card {
+        width: 350px;
+        height: 300px;
+        border: solid 1px $color-quaternary;
+        border-radius: 20px;
+        background-color: #fff;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 5px #dddddd;
+        overflow: hidden;
+        transition: box-shadow 300ms;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        &:hover {
+            box-shadow: 0 8px 10px #a8a8a8;
+        }
+        .restaurants__new {
+            color: #00c060 !important;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-decoration: none;
+            background-color: $color-tertiary;
+            border-radius: 5px;
+            width: 110px;
+            padding: 8px 5px;
+            text-align: center;
+            position: relative;
+            top: -280px;
+            right: -200px;
+        }
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__height {
+                height: 90px;
+            }
+            h3 {
+                margin: 20px 0 5px 20px;
+                font-size: 1.4em;
+            }    
+            p {
+                margin: 5px 0 20px 20px;
+                font-size: 1.2em;
+                color: #575757;
+            }
+        }
+        i {
+            font-size: 2em;
+            color: #797979;
+            position: relative;
+            top: -60px;
+            right: -300px;
+            &:hover { 
+                animation: liked 2s ease-in-out forwards;
+                cursor: pointer;
+            }
+            &:active {
+                animation: liked 2s ease-in-out forwards;
+            }
+        }
+    }
+} 
+
+@keyframes liked { 
+    0% { 
+        font-weight: lighter;
+        color: $color-primary;
+        opacity: 1;
+    }
+    25% {
+        font-weight: bold;
+        color: $color-primary;
+        opacity: .3;
+    }
+    50% {
+        color: $color-primary;
+        opacity: .7;
+    }
+    75% {
+        color: $color-primary;
+        opacity: .9;
+    }
+    100%   { 
+        font-weight: bold;
+        color: $color-primary; 
+        opacity: 1;
+    }
+}
+
+
+/* ---------- MEDIA QUERIES ----------- */
+
+@media screen and (min-width: 600px) {
+
+    .restaurants {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__card {
+            margin: 0 3px 30px 3px;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /* --------- SECTION GEOLOCALISATION -------- */
+    .zone {
+        &__location {
+            div {
+                width: 45%;
+            }
+            p {
+                width: 55%;
+            }
+        }
+    }
+
+    /* --------- SECTION FONCTIONNEMENT --------- */
+
+    .functioning {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        h2 {
+            margin: 0 0 35px 5%;
+            width: 90%;
+        }
+        &__bar {
+            width: 40%;
+            height: 100px;
+            i {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    /* ----- SECTION LISTES DES RESTAURANTS ----- */
+
+    .restaurants {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__card {
+            margin: 0 3px 30px 3px;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* --------- SECTION GEOLOCALISATION -------- */
+    .zone {
+        &__location {
+            div {
+                width: 47%;
+            }
+            p {
+                width: 53%;
+            }
+        }
+    }
+
+    /* --------- SECTION FONCTIONNEMENT --------- */
+
+    .functioning {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        h2 {
+            margin: 0 0 35px 5%;
+            width: 90%;
+        }
+        &__bar {
+            width: 25%;
+            height: 100px;
+            i {
+                margin-right: 20px;
+            }
+        }
+    }
+}
