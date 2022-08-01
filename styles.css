@@ -15,9 +15,9 @@
   font-weight: bold;
 }
 
-h1 {
+/* h1 {
   font-family: "Shrikhand", sans-serif;
-}
+} */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -141,7 +141,6 @@ header {
 .functioning_bar:hover {
   background-color: #f9e8fd;
   cursor: pointer;
-  box-shadow: 5px 8px 8px #dddddd;
 }
 
 .functioning_bar:hover > i {
@@ -152,7 +151,7 @@ header {
   position: absolute;
   left: -12px;
   color: #fff;
-  background-color: #9356dc;
+  background: linear-gradient(172deg, #ff79da, #9356dc);
   border-radius: 100%;
   width: 30px;
   height: 30px;
@@ -163,17 +162,13 @@ header {
   position: absolute;
   left: 9px;
   top: -15px;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .functioning_bar i {
   width: 20%;
   text-align: center;
   color: #929292;
-}
-
-.functioning_bar p {
-  font-weight: bold;
 }
 
 .figure_images_fonctioning_restaurant {
